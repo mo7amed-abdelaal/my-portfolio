@@ -35,9 +35,9 @@ const content = {
     projects: {
       heading: "Selected Projects",
       list: [
-        { title: "Threat Intelligence Platform (In Progress)", desc: "Designing a modular TIP that aggregates OSINT, correlates IoCs, and exposes a secure API/dashboard for SOC workflows.", tech: ["Next.js", "FastAPI", "PostgreSQL", "Redis", "Docker"], link: "#", image: "/project1.png" },
-        { title: "Graph Analysis Tool (Qt GUI)", desc: "Built GUI app to load graphs, compute MST & shortest paths (Prim, Kruskal, Dijkstra). Led a 4‑person team and delivered an A+ project.", tech: ["Qt", "C++"], link: "#", image: "/project2.png" },
-        { title: "C++ CLI Projects", desc: "Snake Game (real‑time input, collision detection) and Car Management System (OOP principles, file persistence).", tech: ["C++", "Raylib"], link: "#", image: "/project3.png" }
+        { title: "Threat Intelligence Platform (In Progress)", desc: "Designing a modular TIP that aggregates OSINT, correlates IoCs, and exposes a secure API/dashboard for SOC workflows.", tech: ["Next.js", "FastAPI", "PostgreSQL", "Redis", "Docker"], link: "#", image: "/my-portfolio/project1.png" },
+        { title: "Graph Analysis Tool (Qt GUI)", desc: "Built GUI app to load graphs, compute MST & shortest paths (Prim, Kruskal, Dijkstra). Led a 4‑person team and delivered an A+ project.", tech: ["Qt", "C++"], link: "#", image: "/my-portfolio/project2.png" },
+        { title: "C++ CLI Projects", desc: "Snake Game (real‑time input, collision detection) and Car Management System (OOP principles, file persistence).", tech: ["C++", "Raylib"], link: "#", image: "/my-portfolio/project3.png" }
       ]
     },
     skills: {
@@ -156,10 +156,10 @@ export default function App() {
 </p>
             <div className={`mt-8 flex ${lang === 'ar' ? 'justify-end' : 'justify-start'} gap-3`}>
               <a href="#portfolio" className="inline-flex items-center gap-2 rounded-xl bg-white/5 hover:bg-white/10 px-5 py-3 text-sm font-semibold"><TerminalSquare className="w-4 h-4" /> {t.hero.ctaPrimary}</a>
-              <a href="/Resume.pdf" download className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-green-500 to-emerald-700 px-5 py-3 text-sm font-semibold shadow-lg shadow-green-900/30"><FileText className="w-4 h-4" /> {t.hero.ctaSecondary}</a>
+              <a href="/my-portfolio/Resume.pdf" download className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-green-500 to-emerald-700 px-5 py-3 text-sm font-semibold shadow-lg shadow-green-900/30"><FileText className="w-4 h-4" /> {t.hero.ctaSecondary}</a>
             </div>
             <div className="mt-10 w-40 h-40 rounded-full overflow-hidden border-4 border-green-500 shadow-lg">
-              <img src="/profile.jpg" alt="Mohamed Abdelaal" className="w-full h-full object-cover" />
+              <img src="/my-portfolio/profile.jpg" alt="Mohamed Abdelaal" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>
