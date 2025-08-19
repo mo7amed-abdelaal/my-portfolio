@@ -15,7 +15,8 @@ jobs:
         with:
           node-version: 20
           cache: "npm"
-      - run: npm install --include=dev
+      - run: npm ci
+      - run: chmod +x node_modules/.bin/vite
       - run: npm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
